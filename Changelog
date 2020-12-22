@@ -75,8 +75,12 @@ version <next>:
 - setts bitstream filter
 - vif video filter
 - OpenEXR image encoder
+<<<<<<< HEAD
 - Simbiosis IMX decoder
 - Simbiosis IMX demuxer
+=======
+- siti filter
+>>>>>>> avfilter: Added siti filter
 
 
 version 4.3:

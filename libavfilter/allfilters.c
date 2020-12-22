@@ -404,6 +404,7 @@ extern AVFilter ff_vf_signature;
 extern AVFilter ff_vf_smartblur;
 extern AVFilter ff_vf_sobel;
 extern AVFilter ff_vf_sobel_opencl;
+extern AVFilter ff_vf_siti;
 extern AVFilter ff_vf_split;
 extern AVFilter ff_vf_spp;
 extern AVFilter ff_vf_sr;

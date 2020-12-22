@@ -18661,6 +18661,31 @@ ffmpeg -i input1.mkv -i input2.mkv -filter_complex "[0:v][1:v] signature=nb_inpu
 
 @end itemize
 
+@anchor{siti}
+@section siti
+
+Calculate Spatial Info (SI) and Temporal Info (TI) scores for a video, as defined
+in ITU-T P.910: Subjective video quality assessment methods for multimedia
+applications. Available PDF at @url{https://www.itu.int/rec/T-REC-P.910-199909-S/en}.
+Per frame metrics can be written into a file in csv format.
+
+It accepts the following option:
+
+@table @option
+@item stats_file
+Set the path to the file where per frame SI and TI metrics will be written. If no file
+is specified, only summary statistics will be printed to the console.
+@end table
+
+@subsection Examples
+@itemize
+@item
+To calculate SI/TI metrics and store per frame data to stats.csv:
+@example
+ffmpeg -i input.mp4 -vf siti=stats_file='siti.csv' -f null -
+@end example
+@end itemize
+
 @anchor{smartblur}
 @section smartblur
 
